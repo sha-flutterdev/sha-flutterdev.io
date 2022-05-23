@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cardio-Disease Prediction - Form </title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+	<style type="text/css">
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 900% 900%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient { 
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<section id="content">
+		<form action="/index.html" method="POST">
+			<div class="head"><h1>Your information</h1></div>
+			<table class="slidecontainer">
+				<tr>
+				
+					<td id="portion">
+						<label id="stickers12">Gender</label>
+						<input type="radio" name="gender" class="crange" value="1" id="gender_male" /><label for="gender_male">Male</label>
+						<input type="radio" name="gender" class="crange" value="0" id="gender_female" /><label for="gender_female" style="margin-right: 20px;">Female</label>
+					</td>
+					
+					<td id="portion">
+						<label id="stickers1">Age</label>
+						<input type="text" name="age" class="age" required="" id="age" />
+					</td>
+				
+				
+	  			</tr>
+			</table>
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers2" style="margin-right: 60px;">Are you a Current Smoker</label>
+						<input type="radio" name="smoker" class="crange" value="1" id="smoker_yes" /><label for="smoker_yes">Yes</label>
+						<input type="radio" name="smoker" class="crange" value="0" id="smoker_no"><label for="smoker_no">No</label>
+					</td>
+				</tr>
+			</table>
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers3"style="margin-right: 125px;">Cigarette Per Day</label>
+						<input type="text" name="cigarette" class="age" required="" id="cigarette" style= "background: transparent;color: white;border: none;border-bottom: 1px solid white;" />
+					</td>
+				</tr>
+			</table>
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers4" style="margin-right: 145px;">Stroke History</label>
+						<input type="radio" name="stroke" class="stroke" value="1" id="stroke_yes" /><label for="stroke_yes">Yes</label>
+						<input type="radio" name="stroke" class="stroke" value="0" id="stroke_no" /><label for="stroke_no" >No</label>
+					</td>
+					
+				</tr>
+			</table>
+			
+			
+			<table class="slidecontainer">
+			<tr>
+			<td id="portion">
+						<label id="stickers5"style="margin-right: 100px;">Hypertension History</label>
+						<input type="radio" name="prevalenthyp" class="prevalenthyp_yes" value="1" id="prevalenthyp_yes" /><label for="prevalenthyp_yes">Yes</label>
+						<input type="radio" name="prevalenthyp" class="prevalenthyp_no" value="0" id="prevalenthyp_no" /><label for="prevalenthyp_no">No</label>
+					</td>
+			</tr>
+			</table>
+			
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers6"style="margin-right: 130px;">Diabetes History</label>
+						<input type="radio" name="diabetes" class="diabetes_yes" value="1" id="diabetes_yes" /><label for="diabetes_yes">Yes</label>
+						<input type="radio" name="diabetes" class="diabetes_no" value="0" id="diabetes_no" /><label for="diabetes_no">No</label>
+					</td>
+					
+				</tr>
+			</table>
+			
+			<table class="slidecontainer">
+				<tr>			
+					<td id="portion">
+						<label id="stickers7"style="margin-right: 130px;">Total Cholesterol</label>
+						<input type="text" name="totchol" class="age" required="" id="totchol" style= "background: transparent;color: white;border: none;border-bottom: 1px solid white;"/>
+					</td>
+					
+				</tr>
+			</table>
+			
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers8"style="margin-right: 74px;">Diastolic Blood Pressure</label>
+						<input type="text" name="diabp" class="age" required="" id="diabp" style= "background: transparent;color: white;border: none;border-bottom: 1px solid white;"/>
+					</td>
+						
+					
+					
+				</tr>
+			</table>
+			
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers9"style="margin-right: 173px;">BMI Value</label>
+						<input type="text" name="bmicalc" class="age" required="" id="bmicalc" style= "background: transparent;color: white;border: none;border-bottom: 1px solid white;" />
+					</td>
+		
+					
+					
+				</tr>
+			</table>
+			
+			
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers9"style="margin-right: 75px;">Systolic Blood Pressure</label>
+						<input type="text" name="sysbp" class="age" required="" id="sysbp" style= "background: transparent;color: white;border: none;border-bottom: 1px solid white;" />
+					</td>
+			
+					
+				</tr>
+			</table>
+			
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers10"style="margin-right: 168px;">Heart Rate</label>
+						<input type="text" name="hr" class="age" required="" id="hr" style= "background: transparent;color: white;border: none;border-bottom: 1px solid white;" />
+					</td>
+						
+					
+				</tr>
+			</table>
+			
+			<table class="slidecontainer">
+				<tr>
+					<td id="portion">
+						<label id="stickers11"style="margin-right: 150px;">Glucose Rate</label>
+						<input type="text" name="gr" class="age" required="" id="gr" style= "background: transparent;color: white;border: none;border-bottom: 1px solid white;" />
+					</td>
+				
+					
+				</tr>
+			</table>
+			<!-- <div> -->
+				<!-- <input type="submit" id="predict" value="Predict" />		 -->
+				<!-- <input type="submit" id="bmi" value="BMI" />				 -->
+			<!-- </div> -->
+			
+			
+			<table class="slidecontainerbt">
+				<tr>
+					<td id="portionbt">
+					<input type="submit" id="predict" value="Predict" style = "margin-right:20px; margin-left:250px" />
+					</td>	
+					<td id="portionbt">
+					<a   href="http://127.0.0.1:5000/bmi"style="text-decoration:none; color:white; font-size: 20px;">Check Your BMI</a>
+	  				<!-- <input type="submit" id="bmi" value="BMI"> -->
+	  				</td>	
+					
+				</tr>
+			</table>
+		</form><!-- form -->
+		
+		
+	</section><!-- content -->
+</div><!-- container -->
+
+</body>
+</html>

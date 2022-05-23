@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="{{ url_for('static', filename='resultstyle.css') }}">
+ 
+	<title>Result - Heart-disease Predicted</title>
+	
+	<script type="text/javascript">
+	function myZipcode(){
+var str=document.getElementById("zipcode") .value;
+var zipcodeAlert=document.getElementById("zipcode-alert");
+if (!((/^[0-9]{6}$/.test(str) )))
+{
+zipcodeAlert.style.display="block";
+zipcodeAlert.innerHTML="Zip Code must be only of 6 digits";
+zipcodeFlag=false;
+}
+else
+{
+zipcodeAlert.style.display="none";
+zipcodeFlag=true;
+}
+}
+</script>
+
+</head>
+<body>
+
+	<div class="container">
+        <h1>Heart Disease Predicted</h1>
+   
+    </div>
+	
+	<div class="container1">
+	<form action="/result.html" method="POST">
+		<label id="pin" style="background:none;color: black; right: 70%;  bottom: 60%;  transform: translate(50%,50%);font-family:Times New Roman; font-size:30px; position: absolute;font-family: sans-serif;">Pincode</label>
+		<!-- <input type="text" name="pin" id="pin" maxlength = "40" required=""  /> -->
+		
+		<input class="pincodetext" type="text" name="pin" id="zipcode" required onkeyup="myZipcode();" style = "right: 40%;background: transparent;font-size:16px;color: black;border: none;border-bottom: 1px solid black;
+    bottom: 60%;
+    transform: translate(50%,50%);
+    position: absolute;" />
+		<p id="zipcode-alert">&nbsp </p>
+		<input type="submit" id="predict" value="Find Hospital" style="right: 50%;
+    bottom: 30%;
+    transform: translate(50%,50%);
+    position: absolute;"/>	
+	</form>
+	</div>
+	
+</body>
+</html>

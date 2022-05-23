@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculation form</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='bmistyle.css') }}">
+	<style type="text/css">
+		body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 900% 900%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient { 
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<section id="content">
+		<form action="http://127.0.0.1:5000/bmi" method="POST">
+			<div class="head"><h1>Check your BMI here</h1></div>
+			<table class="slidecontainer">
+				<tr>
+				
+					<td id="portion">
+						<label id="stickers12">Height in meter:</label>
+						<input type="text" name="height" class="height" required="" id="height" />
+					</td>
+					
+					<td id="portion">
+						<label id="stickers1">Weight in kg:</label>
+						<input type="text" name="weight" class="weight" required="" id="weight" />
+					</td>
+				
+				
+	  			</tr>
+			</table>
+			<table class="slidecontainerbt">
+				<tr>
+					<td id="portionbt">
+					<input type="submit" id="bmi" name="bmi" value="Check BMI" />
+					</td>
+					
+				</tr>
+			</table>			
+		</form><!-- form -->
+		
+		
+	</section><!-- content -->
+</div><!-- container -->
+
+</body>
+</html>

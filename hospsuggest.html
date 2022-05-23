@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="{{ url_for('static', filename='resultstyle.css') }}">
+ 
+	<title>Hospital Recommendation System</title>
+	
+</head>
+<body>
+
+	<div class="containersughd">
+        <h1>Hospitals Recommendation </h1>
+    </div>
+
+
+    <div class="container21">
+    
+	<h2>Hospital address</h2>
+	<h2><br>{{ r11 }}</h2><br>
+	<h2>Hospital phone number<br></h2>
+	<h2>{{ r12 }}</h2><br>
+	
+	</div>
+   
+    
+    <div class="container22">
+    
+	<h2>Hospital address</h2>
+	<h2><br>{{ r21 }}</h2><br>
+	<h2>Hospital phone number<br></h2>
+	<h2>{{ r22 }}</h2><br>
+	
+	</div>
+
+
+    <div class="container23">
+    
+	<h2>Hospital address</h2>
+	<h2><br>{{ r31 }}</h2><br>
+	<h2>Hospital phone number<br></h2>
+	<h2>{{ r32 }}</h2><br>
+	
+	</div>
+	<center> <a href="http://127.0.0.1:5000/backtohome"style="text-decoration:none; color:white; font-size: 30px;">Back to Home</a> </center>
+
+
+	
+	
+</body>
+</html>
